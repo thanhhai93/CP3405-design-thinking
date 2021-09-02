@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "976022550183",
+    "project_id": "connect-us-7a864",
+    "storage_bucket": "connect-us-7a864.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976022550183:android:84f48b9b6f4c2e2a320d82",
+        "android_client_info": {
+          "package_name": "au.edu.jcu.cp3406.designthinkingiii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976022550183-s5m0ofdj02eu3jlqgspinpkpd0hr1os8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO2ZiKfmduj-a0AhYAFdAtzEySCj8AWRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976022550183-s5m0ofdj02eu3jlqgspinpkpd0hr1os8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <!--Need backend for tutorial-->
+
+    <!--Need backend for voice recognition-->
+
+    <ImageView
+        android:id="@+id/tutorialPage"
+        android:layout_width="301dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="12dp"
+        android:background="#FDFDFD"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/tutorial" />
+
+    <!--Need backend for video call-->
+
+    <!--Need backend for voice call-->
+
+    <!--Need backend for Message-->
+    <!--https://stackoverflow.com/questions/4785544/clickable-image-android-->
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="302dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="1dp"
+        android:text="Turorials"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialPage" />
+
+    <ImageView
+        android:id="@+id/btnvoicerecognition"
+        android:layout_width="301dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="8dp"
+        android:background="#FDFDFD"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:srcCompat="@drawable/voice_recognition" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="307dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="1dp"
+        android:text="Voice Recognition"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnvoicerecognition" />
+
+    <ImageView
+        android:id="@+id/videocall"
+        android:layout_width="124dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+
+        android:background="#FDFDFD"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/videocall" />
+
+    <ImageView
+        android:id="@+id/voicecall"
+        android:layout_width="124dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:background="#FDFDFD"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/videocall"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/call" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="127dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="60dp"
+        android:text="Voice call"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voicecall" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="127dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="44dp"
+        android:text="Video call"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videocall" />
+
+    <ImageView
+        android:id="@+id/message_box"
+        android:layout_width="124dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:background="#FDFDFD"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_out_btn"
+        app:srcCompat="@drawable/messages" />
+
+
+    <!--User will go to profile page when clicking on phone number-->
+
+    <!--Need backend for contact-->
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="127dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="40dp"
+        android:text="Messages"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_box" />
+
+    <Button
+
+        android:id="@+id/log_out_btn"
+        android:layout_width="95dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+
+        android:text="@string/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_phone" />
+
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="347dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:text="Your Phone number: +65 861171544"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/contacts"
+        android:layout_width="129dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="68dp"
+        android:background="#FDFDFD"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/message_box"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_out_btn"
+        app:srcCompat="@drawable/contacts" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="127dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="60dp"
+        android:text="Contacts"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contacts" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

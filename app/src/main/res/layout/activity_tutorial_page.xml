@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tutorialPageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Tutorial"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/contactTutorialImage"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                android:clickable="true"
+                app:layout_constraintBottom_toTopOf="@id/contactTutorialLabel"
+                app:layout_constraintEnd_toStartOf="@+id/messageTutorialImage"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tutorialPageText"
+                app:srcCompat="@drawable/contacts" />
+
+            <TextView
+                android:id="@+id/contactTutorialLabel"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Contact\nTutorial"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toTopOf="@id/voiceCallTutorialImage"
+                app:layout_constraintEnd_toStartOf="@+id/messageTutorialLabel"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactTutorialImage" />
+
+            <ImageView
+                android:id="@+id/messageTutorialImage"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                android:clickable="true"
+                app:layout_constraintBottom_toTopOf="@id/messageTutorialLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/contactTutorialImage"
+                app:layout_constraintTop_toBottomOf="@id/tutorialPageText"
+                app:srcCompat="@drawable/messages" />
+
+            <TextView
+                android:id="@+id/messageTutorialLabel"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Message\nTutorial"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toTopOf="@id/videoCallTutorialImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/contactTutorialLabel"
+                app:layout_constraintTop_toBottomOf="@id/messageTutorialImage"
+                tools:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/voiceCallTutorialImage"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                android:clickable="true"
+                app:layout_constraintBottom_toTopOf="@id/voiceCallTutorialLabel"
+                app:layout_constraintEnd_toStartOf="@+id/videoCallTutorialImage"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactTutorialLabel"
+                app:srcCompat="@drawable/call" />
+
+            <TextView
+                android:id="@+id/voiceCallTutorialLabel"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Voice Call\nTutorial"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toStartOf="@+id/videoCallTutorialLabel"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/voiceCallTutorialImage" />
+
+            <ImageView
+                android:id="@+id/videoCallTutorialImage"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                android:clickable="true"
+                app:layout_constraintBottom_toTopOf="@id/videoCallTutorialLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/voiceCallTutorialImage"
+                app:layout_constraintTop_toBottomOf="@id/messageTutorialLabel"
+                app:srcCompat="@drawable/videocall" />
+
+            <TextView
+                android:id="@+id/videoCallTutorialLabel"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:text="Video Call\nTutorial"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toTopOf="@id/voiceRegTutorialImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/voiceCallTutorialLabel"
+                app:layout_constraintTop_toBottomOf="@id/videoCallTutorialImage" />
+
+            <ImageView
+                android:id="@+id/voiceRegTutorialImage"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:clickable="true"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/voiceRegTutorialLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.513"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tutorialPageText"
+                app:srcCompat="@drawable/voice_recognition" />
+
+            <TextView
+                android:id="@+id/voiceRegTutorialLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Voice Recognition Tutorial"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.542"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/voiceRegTutorialImage" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
